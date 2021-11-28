@@ -12,7 +12,7 @@ echo "=> Starting fan controller...\n"
 sudo mv fancontrol.sh /etc/init.d/fancontrol
 sudo chmod +x /etc/init.d/fancontrol
 
-sudo update-rc.d fancontrol defaults
+sudo rc-update add fancontrol default
 sudo /etc/init.d/fancontrol start
 
 echo "Fan controller installed."
