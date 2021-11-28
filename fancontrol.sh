@@ -19,7 +19,7 @@ case "$1" in
     pkill -f /usr/local/bin/fancontrol.py
     ;;
   *)
-    echo "Usage: /etc/init.d/fancontrol.sh {start|stop}"
+    echo "Usage: /etc/init.d/fancontrol {start|stop}"
     exit 1
     ;;
 esac
